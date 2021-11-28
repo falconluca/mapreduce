@@ -12,7 +12,7 @@ _ = stream.NewIntStream([]int{5, 6, -1, 1, 1, 1, 1, 1, 4, 2, 3}).
 	Sorted().
 	Skip(1).
 	Limit(5).Peek(func(i int) {
-	fmt.Printf("%v ", i)
+	    fmt.Printf("%v ", i)
 	}).
 	Collect()
 ```
