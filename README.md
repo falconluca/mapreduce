@@ -1,6 +1,6 @@
 # Stream
 
-使用Go实现Java Stream风格的函数式编程API
+Go实现Java Stream风格的函数式编程API
 
 ## Usage
 
@@ -11,7 +11,8 @@ _ = stream.NewIntStream([]int{5, 6, -1, 1, 1, 1, 1, 1, 4, 2, 3}).
 	Distinct().
 	Sorted().
 	Skip(1).
-	Limit(5).Peek(func(i int) {
+	Limit(5).
+	Peek(func(i int) {
 	    fmt.Printf("%v ", i)
 	}).
 	Collect()
